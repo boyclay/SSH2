@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="user" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="roleInterceptor" class="intercept.RoleInterceptor"></interceptor>
+		</interceptors>
+		<global-results>
+			<result name="input">login.jsp</result>
+		</global-results>
+		<action name="User_login" method="login" class="userAction">
+			<result name="success">/WEB-INF/jsp/test.jsp</result>
+			<interceptor-ref name="roleInterceptor" />
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,8 @@
+/action/
+/applicationContext.xml
+/dao/
+/entity/
+/intercept/
+/log4j.properties
+/service/
+/struts.xml

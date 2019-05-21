@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="entity.EMP" table="emp" >
+		<id name="PerId" type="java.lang.String">
+			<column name="PerId" />
+		</id>
+		<property name="EmpNo" type="java.lang.String">
+			<column name="EmpNo" length="20" />
+		</property>
+		<property name="EmpName" type="java.lang.String">
+			<column name="EmpName" length="20" />
+		</property>
+	</class>
+</hibernate-mapping>
